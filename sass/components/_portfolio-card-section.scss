@@ -1,0 +1,74 @@
+.projects {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+  justify-content: space-between;
+
+  &__title {
+    font-weight: var(--big-font-weight);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-color);
+    padding-left: 24px;
+    padding-top: 20px;
+  }
+
+  &__feature {
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--main-grey-color);
+    padding: 4px 24px 20px;
+  }
+
+  & li img {
+    width: 370px;
+    height: 294px;
+  }
+}
+
+.card {
+  width: 370px;
+  height: 404px;
+  background: var(--white-color);
+  border: var(--card-border);
+  transition: background-color, border,
+    box-shadow 250ms var(--main-transition-timing-function);
+
+  &:hover {
+    background: var(--white-color);
+    border: var(--card-border);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--white-color);
+  }
+
+  &__img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__overlayer {
+    position: absolute;
+    background: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px 91px;
+    top: 0;
+    height: 100%;
+    transform: translatey(100%);
+    transition: transform 250ms var(--main-transition-timing-function);
+  }
+
+  &:hover .card__overlayer {
+    transform: translatey(0);
+    height: 294px;
+  }
+}
+
+

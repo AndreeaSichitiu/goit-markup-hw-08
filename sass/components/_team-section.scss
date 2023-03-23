@@ -1,0 +1,106 @@
+.team-section {
+  background-color: var(--light-grey-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__title {
+    font-weight: var(--big-font-weight);
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: var(--main-color);
+    padding-bottom: 30px;
+  }
+
+  &__img-list {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    
+
+    & > li {
+      background: var(--white-color);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+    }
+  }
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: var(--main-color);
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+
+  &__job {
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: var(--main-grey-color);
+    padding-bottom: 16px;
+  }
+
+  &__media {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms var(--main-transition-timing-function);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--blue-color);
+      cursor: pointer;
+    }
+
+    &:hover .team__icon {
+      fill: var(--white-color);
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    gap: 10px;
+  }
+
+  &__icon {
+    fill: var(--media-fill-color);
+    transition: fill 250ms var(--main-transition-timing-function);
+  }
+}
+
+@media  screen and (min-width: 768px){
+   
+}
+
+
+@media  screen and (min-width: 1200px) {
+  .team-section {
+    padding-top: 94px;
+  padding-bottom: 94px;
+  &__title {
+    font-size: 36px;
+    line-height: 42px;
+    padding-bottom: 50px;
+  }
+  &__img-list {
+    justify-content: space-between; 
+    flex-direction: row;
+  }
+}
+}
