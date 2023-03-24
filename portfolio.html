@@ -17,29 +17,49 @@
   <!--HeaderSection-->
   <header class="header-section">
     <div class="container container--mod">
-      <nav class="header-nav">
-        <a class="header-nav__logo" href="WebStudio">Web<span class="header-nav__logo header-nav__logo--part">Studio</span></a>
+      <a class="header-nav__logo" href="WebStudio">Web<span class="header-nav__logo header-nav__logo--part">Studio</span></a>
+      <nav class="header-nav menu">
         <ul class="header-nav__list unstyled-list">
           <li class="header-nav__item"><a class="header-nav__link" href="index.html">Studio</a></li>
           <li class="header-nav__item"><a class="header-nav__link active" href="portfolio.html">Portfolio</a></li>
           <li class="header-nav__item"><a class="header-nav__link" href="contacts.html">Contacts</a></li>
         </ul>
       </nav>
-      <ul class="header-contact unstyled-list">
+      <ul class="header-contact tablet unstyled-list menu">
         <li>
-          <a class="header-contact__link" href="mailto:info@devstudio.com"><svg class="header-contact__icons" width="16" height="12">
+          <a class="header-contact__link tablet__link" href="mailto:info@devstudio.com"><svg class="header-contact__icons" width="16" height="12">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a>
         </li>
-        <li><a class="header-contact__link" href="tel:+12127724150"><svg class="header-contact__icons" width="14" height="16">
+        <li><a class="header-contact__link tablet__link" href="tel:+12127724150"><svg class="header-contact__icons" width="14" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>+1 212-772-4150</a></li>
       </ul>
+      <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+      </button>
+            
     </div>
   </header>
   <main>
     <!--ButtonsSection-->
-    <ul class="button-menu unstyled-list">
+    <ul class="container button-menu unstyled-list">
       <li><button class="button-menu__item" type="button">All</button></li>
       <li><button class="button-menu__item" type="button">Web-sites</button></li>
       <li><button class="button-menu__item" type="button">Apps</button></li>
@@ -170,6 +190,41 @@
       </ul>
     </section>
   </main>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg
+        fill= "#212121"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+    <ul class="menu-list menu-list--mod unstyled-list">
+      <li class="header-nav__item"><a class="header-nav__link menu--mod" href="index.html">Studio</a></li>
+      <li class="header-nav__item"><a class="header-nav__link menu--mod" href="portfolio.html">Portfolio</a></li>
+      <li class="header-nav__item"><a class="header-nav__link menu--mod" href="contacts.html">Contacts</a></li>
+    </ul>
+    <ul class="menu-list unstyled-list">
+      <li><a class="menu-list__phone" href="tel:+12127724150">+1 212-772-4150</a></li>
+      <li><a class="menu-list__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+    </ul>
+    <ul class="menu-media unstyled-list">
+      <li class="menu-media__item"><a class="header-nav__link media--mod" href="Instagram">Instagram</a></li>
+      <li><span class="line"></span></li>
+      <li class="menu-media__item"><a class="header-nav__link media--mod" href="Twitter">Twitter</a></li>
+      <li><span class="line"></span></li>
+      <li class="menu-media__item"><a class="header-nav__link media--mod" href="Facebook">Facebook</a></li>
+      <li><span class="line"></span></li>
+      <li class="menu-media__item"><a class="header-nav__link media--mod" href="LinkedIn">LinkedIn</a></li>
+    </ul>
+  </div>
   <!--FooterSection-->
   <footer class="footer-section">
     <div class="container footer-content">
@@ -233,6 +288,7 @@
       </div>
     </div>
   </footer>
+<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

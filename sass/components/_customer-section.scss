@@ -1,18 +1,20 @@
 .customer-section {
   &__title {
     font-weight: var(--big-font-weight);
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 28px;
+    line-height: 33px;
     text-align: center;
     color: var(--main-color);
-    padding-top: 94px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 25px;
   }
 
   &__list {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
   }
 
   &__logo {
@@ -27,7 +29,7 @@
     display: flex;
     border: 1px solid var(--media-fill-color);
     border-radius: 4px;
-    padding: 16px 32px;
+    padding: 16px 52px;
     transition: border-color 250ms var(--main-transition-timing-function);
 
     &:hover,
@@ -52,5 +54,32 @@
 
   &__icons {
     fill: var(--media-fill-color);
+  }
+}
+
+@media  screen and (min-width: 768px){
+  .customer-section__item {
+    padding: 16px 60px;
+}
+}
+
+@media  screen and (min-width: 1200px){
+  .customer-section {
+    &__title {
+       
+      font-size: 36px;
+      line-height: 42px;
+      padding-top: 94px;
+      padding-bottom: 50px;
+    }
+
+    &__list {
+      justify-content: space-between;
+      padding-bottom: 94px;
+    }
+
+    &__item {
+     padding: 16px 32px;
+  }
   }
 }

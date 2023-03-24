@@ -30,7 +30,6 @@
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
-    
     height: 120px;
 
     & svg {
@@ -55,10 +54,6 @@
       display: flex;
       flex-direction: column;
       padding: 0;
-    }
-
-    &__cards {
-      width: 270px;
     }
 
     &__title {
