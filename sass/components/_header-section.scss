@@ -1,20 +1,19 @@
 .header-section {
   border-bottom: 1px solid #ececec;
   display: flex;
-  
+  padding: 15px;
 }
 
 .container--mod {
   display: flex;
   justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 15px;
+   
 }
 
 .header-contact {
   flex-direction: column;
   justify-content: center;
-  gap:10px;
+  gap: 10px;
 
   &__link {
     display: flex;
@@ -99,22 +98,23 @@
   }
 }
 
-@media  screen and (min-width: 768px){
-  
+@media screen and (min-width: 768px) {
+  .header-section {
+    padding: 0 15px;
+  }
 }
 
-
-@media  screen and (min-width: 1200px){
-.header-section {
-  padding: 0;
-}
-.header-contact {
-  gap: 40px; 
- margin-top: 32px; 
-   margin-left: auto;
-   flex-direction: row;
-}
-.header-nav {
-  margin-left: 93px;
-}
+@media screen and (min-width: 1200px) {
+   .header-contact {
+    gap: 40px;
+    margin-top: 32px;
+    margin-left: auto;
+    flex-direction: row;
+  }
+  .header-nav {
+    margin-left: 93px;
+  }
+  .header-section {
+    padding: 0 15px;
+  }
 }

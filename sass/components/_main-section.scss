@@ -31,44 +31,48 @@
   }
 }
 
-@media  screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .main-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)), url("../../images/office-t.jpg");
-}
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)),
+      url("../../images/office-t.jpg");
+  }
 }
 
-@media  screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
   .main-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)), url("../../images/office.jpg");
-    
-  &__title {
-        font-size: 44px;
-        line-height: 60px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)),
+      url("../../images/office.jpg");
+
+    &__title {
+      font-size: 44px;
+      line-height: 60px;
     }
-}
- 
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2),
-screen and (min-resolution: 192dpi),
-screen and (min-resolution: 2dppx){
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
   .main-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)), url("../../images/office-m@2X.jpg");
-}
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)),
+      url("../../images/office-m@2X.jpg");
+  }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-screen and (min-width: 768px) and (min-resolution: 192dpi),
-screen and (min-width: 768px) and (min-resolution: 2dppx){
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .main-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)), url("../../images/office-t@2X.jpg");
-}
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)),
+      url("../../images/office-t@2X.jpg");
+  }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-screen and (min-width: 1200px) and (min-resolution: 192dpi),
-screen and (min-width: 1200px) and (min-resolution: 2dppx){
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main-section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)), url("../../images/office@2X.jpg");
-}
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)),
+      url("../../images/office@2X.jpg");
+  }
 }

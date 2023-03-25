@@ -142,12 +142,10 @@
     flex-direction: row;
     justify-content: space-around;
   }
-    
-    .footer-subscription {
-      flex-grow: 0.4;
-            }
-    
-  
+
+  .footer-subscription {
+    flex-grow: 0.4;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -155,7 +153,7 @@
     height: 251px;
   }
   .footer-content {
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     padding: 60px 0 0;
   }
@@ -181,8 +179,6 @@
     }
   }
   .footer-media {
-         align-items: flex-start;
-    }
+    align-items: flex-start;
+  }
 }
-
-

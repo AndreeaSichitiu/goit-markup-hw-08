@@ -1,9 +1,10 @@
 .projects {
   display: flex;
   gap: 30px;
-  flex-wrap: wrap;
-  padding-bottom: 94px;
-  justify-content: space-between;
+  padding: 0 15px 94px;
+  align-items: center;
+  flex-direction: column;
+
 
   &__title {
     font-weight: var(--big-font-weight);
@@ -23,8 +24,7 @@
   }
 
   & li img {
-    width: 370px;
-    height: 294px;
+    width: 100%; 
   }
 }
 
@@ -71,4 +71,25 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .projects {
+        & li img {
+      width: 354px;
+      height: 294px;
+    }
+    }
+}
 
+@media screen and (min-width: 1200px) {
+.projects {
+flex-wrap: wrap;
+padding-bottom: 0 0 94px;
+justify-content: space-between;
+flex-direction: row;
+
+& li img {
+  width: 370px;
+  height: 294px;
+}
+}
+}
