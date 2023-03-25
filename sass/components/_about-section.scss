@@ -2,8 +2,7 @@
   padding: 60px 0 15px;
  
   &__list{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px 30px;
   }
 
   &__title {
@@ -21,7 +20,7 @@
     line-height: 24px;
     letter-spacing: 0.03em;
     color: var(--main-grey-color);
-    padding-bottom: 30px;
+    
   }
 
   &__cards {
@@ -38,10 +37,24 @@
   }
 }
 
-@media  screen and (min-width: 768px){
-   
-}
+@media  screen and (min-width: 768px) {
+  .about-section {
+  padding: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
 
+  &__list{
+    padding: 0;
+    width: 354px;
+  }
+
+  &__title {
+  text-align: left;
+  }
+}
+}
 
 @media  screen and (min-width: 1200px){
   .about-section {

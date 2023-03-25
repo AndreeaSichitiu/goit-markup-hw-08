@@ -12,14 +12,13 @@
     padding-bottom: 30px;
   }
 
-& img {
-  width: 100vw;
-}
-
+ 
   &__img-list {
     display: flex;
     gap: 30px;
     flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
     
 
     & > li {
@@ -94,6 +93,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 0;
 }
 .team img{
   width: auto;
@@ -113,6 +113,7 @@
   &__img-list {
     justify-content: space-between; 
     flex-direction: row;
+    padding: 0;
   }
 }
 }
