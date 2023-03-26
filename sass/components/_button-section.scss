@@ -39,6 +39,11 @@
   .button-menu {
     padding-top: 60px;
     padding-bottom: 30px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    &__list {
+      flex-basis: initial;
+    }
   }
 }
 
@@ -46,5 +51,10 @@
   .button-menu {
     padding-top: 94px;
     padding-bottom: 50px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    &__list {
+      flex-basis: initial;
+    }
   }
 }
