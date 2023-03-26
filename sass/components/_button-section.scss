@@ -1,8 +1,13 @@
 .button-menu {
   display: flex;
   gap: 8px;
-  padding: 60px 15px 40px;
-  justify-content: center;
+  padding: 60px 15px 40px !important;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  &__list {
+    flex-basis: calc((100% - 3*8px)/3);
+  }
 
   &__item {
     font-weight: 500;

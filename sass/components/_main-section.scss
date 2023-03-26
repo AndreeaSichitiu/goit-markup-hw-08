@@ -1,6 +1,6 @@
 .main-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)),
-    url(images/office-m.jpg);
+    url(../../images/office-m.jpg);
   height: 600px;
   background-size: cover;
   text-align: center;
@@ -34,14 +34,14 @@
 @media screen and (min-width: 768px) {
   .main-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)),
-      url("images/office-t.jpg");
+      url("../../images/office-t.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .main-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)),
-      url("images/office.jpg");
+      url("../../images/office.jpg");
 
     &__title {
       font-size: 44px;
@@ -55,7 +55,7 @@
   screen and (min-resolution: 2dppx) {
   .main-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)),
-      url("images/office-m@2X.jpg");
+      url("../../images/office-m@2X.jpg");
   }
 }
 
@@ -64,7 +64,7 @@
   screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .main-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)),
-      url(".images/office-t@2X.jpg");
+      url("../../images/office-t@2X.jpg");
   }
 }
 
@@ -73,6 +73,6 @@
   screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main-section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 48, 58, 0.2)),
-      url("images/office@2X.jpg");
+      url("../../images/office@2X.jpg");
   }
 }
