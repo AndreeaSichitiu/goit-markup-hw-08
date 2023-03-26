@@ -5,7 +5,6 @@
   align-items: center;
   flex-direction: column;
 
-
   &__title {
     font-weight: var(--big-font-weight);
     font-size: 18px;
@@ -22,15 +21,9 @@
     color: var(--main-grey-color);
     padding: 4px 24px 20px;
   }
-
-  & li img {
-    width: 100%; 
-  }
 }
 
 .card {
-  width: 370px;
-  height: 404px;
   background: var(--white-color);
   border: var(--card-border);
   transition: background-color, border,
@@ -67,29 +60,26 @@
 
   &:hover .card__overlayer {
     transform: translatey(0);
-    height: 294px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .projects {
-        & li img {
-      width: 354px;
-      height: 294px;
-    }
-    }
+    display: flex;
+    padding: 0 15px 60px;
+    gap: 26px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-.projects {
-flex-wrap: wrap;
-padding-bottom: 0 0 94px;
-justify-content: space-between;
-flex-direction: row;
-
-& li img {
-  width: 370px;
-  height: 294px;
-}
-}
+  .projects {
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 0 94px;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
 }

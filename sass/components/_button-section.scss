@@ -1,8 +1,7 @@
 .button-menu {
   display: flex;
   gap: 8px;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding: 60px 15px 40px;
   justify-content: center;
 
   &__item {
@@ -32,9 +31,16 @@
 }
 
 @media screen and (min-width: 768px) {
-  
+  .button-menu {
+    padding-top: 60px;
+    padding-bottom: 30px;
   }
+}
 
 
 @media screen and (min-width: 1200px) {
+  .button-menu {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
 }
